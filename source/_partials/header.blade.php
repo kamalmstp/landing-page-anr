@@ -2,7 +2,7 @@
     <div class="header_top">
         <div class="container">
             <div class="pull-left">
-                <a href="/"><img src="/img/logo_header.png" height="50" alt="PT. Antar Nusa Raya Ekspress"></a>
+                <a href="/"><img src="/img/logo_nav.png" height="50" alt="PT. Antar Nusa Raya Ekspress"></a>
             </div>
             <div class="pull-right">
                 <div class="header_c_text">
