@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/img/fav-icon.png" type="image/x-icon" />
+
+    <title>Custom 404 Page</title>
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendors/revolution/css/settings.css" rel="stylesheet">
+    <link href="/vendors/revolution/css/layers.css" rel="stylesheet">
+    <link href="/vendors/revolution/css/navigation.css" rel="stylesheet">
+    <link href="/vendors/animate-css/animate.css" rel="stylesheet">
+    <link href="/vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/vendors/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--================Header Area =================-->
+    
+    <header class="main_header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="pull-left">
+                <a href="/"><img src="/img/logo_nav.png" height="50" alt="PT. Antar Nusa Raya Ekspress"></a>
+            </div>
+            <div class="pull-right">
+                <div class="header_c_text">
+                    <h5>Hubungi Kami</h5>
+                    <h4>+62 812-3456-7890</h4>
+                </div>
+                <div class="header_c_text">
+                    <h5>Jam Kerja</h5>
+                    <h4>Sen - Jum 08:00 - 17:00</h4>
+                </div>
+                <div class="header_c_text">
+                    <h5>Email Kami</h5>
+                    <h4>info@anr-ekspress.com</h4>
+                </div>
+                <div class="header_c_text">
+                    <a class="quote_btn" href="/request-quote">Dapatkan Penawaran</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_menu_area">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Beranda</a></li> 
+                        <li><a href="/about">Tentang Kami</a></li>
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layanan <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Layanan</a></li>
+                                <li><a href="#">Layanan Satu</a></li>
+                                <li><a href="#">Layanan Dua</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/career">Karir</a></li>
+                        <li><a href="/tracking">Tracking</a></li>
+                        <!-- <li class="submenu dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Halaman <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/blog-details">Detail Blog</a></li>
+                                <li><a href="/request-quote">Dapatkan Penawaran</a></li>
+                                <li><a href="/404">404</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/shortcode">Shortcode</a></li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a href="/contact">Kontak</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Cari di sini...">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </div>
+</header>
+    <!--================End Header Area =================-->
+
+    <!-- Konten unik setiap halaman akan dirender di sini -->
+    <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0 lvl0-active  nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/customizing-your-site"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Customizing Your Site
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/navigation"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Navigation
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/algolia-docsearch"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Algolia DocSearch
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/custom-404-page"
+            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+        >
+            Custom 404 Page
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://jigsaw.tighten.co/docs/installation"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Jigsaw Docs
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1 id="custom-404-page">Custom 404 Page</h1>
+
+<p>This starter template includes a custom <strong>404 Not Found</strong> error page, located at <code>/source/404.blade.php</code>. <a href="/404">To preview the 404 page</a>, you can visit <code>/404</code> in your browser.</p>
+
+<pre><code class="language-html">&lt;!-- source/404.blade.php --&gt;
+@extends('_layouts.master')
+
+@section('body')
+&lt;div class="flex flex-col items-center mt-32 text-gray-700"&gt;
+    &lt;h1 class="text-6xl leading-none mb-2"&gt;404&lt;/h1&gt;
+    &lt;h2 class="text-3xl"&gt;Page not found&lt;/h2&gt;
+
+    &lt;hr class="block w-full max-w-lg mx-auto my-8 border"&gt;
+
+    &lt;p class="text-xl"&gt;Need to update this page? See the &lt;a title="404 Page Documentation" href="/docs/404"&gt; documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+@endsection
+</code></pre>
+
+<hr />
+
+<p>Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the <a href="https://jigsaw.tighten.co/docs/custom-404-page/">Jigsaw documentation about configuring a custom 404 page.</a></p>
+        </div>
+    </div>
+</section>
+
+    <!--================Footer Area =================-->
+    
+    <footer class="footer_area">
+    <div class="footer_widget_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <aside class="f_widget about_widget">
+                        <img src="/img/logo_header.png" height="50" alt="PT. Antar Nusa Raya Ekspress">
+                        <p>PT. Antar Nusa Raya Ekspress adalah template website responsif mobile-first untuk logistik atau transportasi.</p> 
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <aside class="f_widget link_widget">
+                        <div class="f_title">
+                            <h3>Tautan Cepat</h3> 
+                        </div>
+                        <ul>
+                            <li><a href="#">HUBUNGAN INVESTOR</a></li>
+                            <li><a href="#">PERS & MEDIA</a></li>
+                            <li><a href="#">LOWONGAN KARIR</a></li>
+                            <li><a href="#">MITRA KAMI</a></li>
+                            <li><a href="#">PEMBERITAHUAN HUKUM</a></li>
+                            <li><a href="#">KEBIJAKAN COOKIE</a></li>
+                            <li><a href="#">SYARAT & KETENTUAN</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <aside class="f_widget service_widget">
+                        <div class="f_title">
+                            <h3>Layanan</h3> 
+                        </div>
+                        <ul>
+                            <li><a href="#">Layanan Kargo Udara Standar</a></li>
+                            <li><a href="#">Layanan Angkutan Laut</a></li>
+                            <li><a href="#">Muatan Penuh dan Sebagian</a></li>
+                            <li><a href="#">Transportasi Khusus</a></li>
+                            <li><a href="#">Solusi Logistik</a></li>
+                            <li><a href="#">Transportasi Proyek Khusus</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <aside class="f_widget info_widget">
+                        <div class="f_title">
+                            <h3>Kontak</h3> 
+                        </div>
+                        <div class="contact_details">
+                            <p>Jl. Contoh No. 123<br class="info_br" /> Banjarmasin, Kalimantan Selatan, Indonesia</p> 
+                            <p>Telepon: <a href="tel:+6281234567890">+62 812-3456-7890</a></p> 
+                            <p>Faks: <a href="#">+62 21-XXXX-XXXX</a></p> 
+                            <p>Email: <a href="mailto:info@anr-ekspress.com">info@anr-ekspress.com</a></p> 
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_copy_right">
+        <div class="container">
+            <h4>Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> - PT. Antar Nusa Raya Ekspres.</h4>
+        </div>
+    </div>
+</footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Link JavaScript dari template asli, perhatikan path yang dimulai dengan '/' -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/js/jquery-2.2.4.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendors/jvectormap/jvectormap.min.js"></script>
+    <script src="/vendors/jvectormap/jvectormap-worldmill.js"></script>
+    <script src="/js/locations.js"></script>
+    <script src="/js/validate.js"></script>
+    <script src="/js/subscribe.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
